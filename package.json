@@ -1,0 +1,49 @@
+{
+  "name": "gpt-diff",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "plasmo": "plasmo dev",
+    "test": "vitest",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@melt-ui/pp": "^0.1.2",
+    "@melt-ui/svelte": "^0.57.3",
+    "@sveltejs/adapter-cloudflare": "^2.3.3",
+    "@sveltejs/kit": "^1.27.1",
+    "@sveltejs/vite-plugin-svelte": "^2.4.6",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "svelte": "^4.2.2",
+    "svelte-sequential-preprocessor": "^2.0.1",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  },
+  "dependencies": {
+    "@tiptap/core": "^2.1.12",
+    "@tiptap/extension-document": "^2.1.12",
+    "@tiptap/extension-hard-break": "^2.1.12",
+    "@tiptap/extension-history": "^2.1.12",
+    "@tiptap/extension-paragraph": "^2.1.12",
+    "@tiptap/extension-text": "^2.1.12",
+    "@tiptap/extension-text-style": "^2.1.12",
+    "@tiptap/pm": "^2.1.12",
+    "@tiptap/starter-kit": "^2.1.12",
+    "bits-ui": "^0.9.0",
+    "dayjs": "^1.11.10",
+    "diff": "^5.1.0",
+    "just-clone": "^6.2.0",
+    "just-truncate": "^2.2.0",
+    "openai": "^4.14.1",
+    "uid": "^2.0.2",
+    "web": "workspace:*"
+  }
+}

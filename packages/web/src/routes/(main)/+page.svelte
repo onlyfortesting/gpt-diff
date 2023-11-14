@@ -81,10 +81,10 @@
     <div use:melt={$overlay} class="fixed inset-0 z-50 bg-black/50" />
     <div
       use:melt={$content}
-      class="fixed inset-0 flex items-center justify-center z-50 m-3 ease-out transition-all md:max-w-2xl md:w-full md:mx-auto pointer-events-none"
+      class="fixed inset-0 flex mt-32 justify-center z-50 m-3 ease-out transition-all md:max-w-2xl md:w-full md:mx-auto pointer-events-none"
     >
       <div
-        class="relative flex flex-col bg-white border shadow-sm rounded-xl overflow-hidden dark:bg-gray-800 dark:border-gray-700 pointer-events-auto"
+        class="relative flex flex-col rounded-xl overflow-hidden pointer-events-auto"
       >
         <button use:melt={$close} class="absolute top-2 right-2">
           <div
@@ -199,7 +199,7 @@
 </div>
 
 <div
-  class="h-[90vh] flex flex-col mt-7 max-w-5xl w-[95vw] mx-auto overflow auto relative"
+  class="h-[90vh] flex flex-col mt-8 max-w-5xl w-[95vw] mx-auto overflow auto relative"
 >
   <div
     class="flex justify-between items-center py-3 px-4 bg-white border shadow-sm rounded-t-xl dark:bg-gray-800 dark:border-gray-700"

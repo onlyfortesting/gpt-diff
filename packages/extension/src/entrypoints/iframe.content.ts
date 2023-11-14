@@ -21,7 +21,7 @@ export default defineContentScript({
         anchor: 'body',
       });
 
-      ui.wrapper.style.cssText = 'position:fixed;inset:0;z-index:9999999'
+      ui.wrapper.style.cssText = 'position:fixed;inset:0;z-index:2147483647'
       ui.iframe.style.cssText = 'width:100%;height:100%'
 
       activeElement = document.activeElement

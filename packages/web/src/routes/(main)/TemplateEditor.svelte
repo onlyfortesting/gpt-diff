@@ -39,7 +39,7 @@
   <div use:melt={$overlay} class="fixed inset-0 z-50 bg-black/50" />
   <div
     use:melt={$content}
-    class="fixed inset-0 flex items-center justify-center z-50 m-3 ease-out transition-all md:max-w-2xl md:w-full md:mx-auto pointer-events-none"
+    class="fixed inset-x-0 top-32 z-50 m-3 ease-out transition-all md:max-w-2xl md:w-full md:mx-auto pointer-events-none"
   >
     <div
       class="relative flex flex-col bg-white border shadow-sm rounded-xl overflow-hidden dark:bg-gray-800 dark:border-gray-700 pointer-events-auto"
@@ -251,7 +251,7 @@
     {/if}
 
     <button
-        type="button"
+      type="button"
       class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
       on:click={() => nav.back()}
     >

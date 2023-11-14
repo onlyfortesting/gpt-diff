@@ -29,38 +29,76 @@ export default defineBackground(() => {
     if (!templates) {
       let startTemplates = [
         {
-          id: 1,
           type: 'transform',
           name: "🔧 Fix Grammars",
           description:
-            "Use GPT to fix grammars without changing the structure of your sentences.",
+            "Fix grammars without changing the structure of your sentences",
           prompt: `Fix grammars:\n{{text}}`,
         },
         {
-          id: 2,
           type: 'transform',
           name: "📝 Use Proper English",
           description:
-            "Rewords your whole text to make use of proper english and make it professional and respectful.",
+            "Rewords your text to make use of proper english",
           prompt: `Convert to proper english:\n{{text}}`,
         },
         {
-          id: 3,
           type: 'transform',
-          name: "🧑‍💻 Create a dialog",
+          name: "🔄 Rewrite for Clarity",
           description:
-            "Rewords your whole text to make use of proper english and make it professional and respectful.",
-          prompt: `Create a dialog using this scenario:\n{{text}}`,
+            "Enhance the clarity of the selected text",
+          prompt: `Rewrite for clarity:\n{{text}}`,
         },
         {
-          id: 4,
-          type: 'generate',
-          name: "🔧 Generate a paragraph",
+          type: 'transform',
+          name: "🔀 Paraphrase Sentences",
           description:
-            "Gen a par",
-          prompt: `Generate 3 english sentences`,
+            "Provide alternative phrasing for the selected sentences",
+          prompt: `Provide alternative phrasing:\n{{text}}`,
         },
-      ]
+        {
+          type: 'transform',
+          name: "🗑️ Remove Redundancy",
+          description:
+            "Identify and eliminate redundant phrases",
+          prompt: `Eliminate redundant phrases:\n{{text}}`,
+        },
+        {
+          type: 'transform',
+          name: "🗣️ Formal Tone",
+          description:
+            "Adjust the tone of the selected text into formal tone",
+          prompt: `Rewrite to formal tone:\n{{text}}`,
+        },
+        {
+          type: 'transform',
+          name: "🧠 Simplify Language",
+          description:
+            "Simplify complex sentences for easier understanding",
+          prompt: `Simplify for easier understanding:\n{{text}}`,
+        },
+        {
+          type: 'transform',
+          name: "✍️ Enhance Descriptions",
+          description:
+            "Elaborate on brief descriptions to provide more context",
+          prompt: `Elaborate to provide more context:\n{{text}}`,
+        },
+        {
+          type: 'generate',
+          name: "📝 Summarize Paragraph",
+          description:
+            "Summarize the selected paragraph to its key points",
+          prompt: `Summarize:\n{{text}}`,
+        },
+        {
+          type: 'generate',
+          name: "🌟 Convert to Bullet Points",
+          description:
+            "Transform a block of text into a bullet-pointed list",
+          prompt: `Transform into a bullet-pointed list:\n{{text}}`,
+        },
+      ].map((c, i) => ({ ...c, id: i }))
       await localExtStorage.setItem('templates', startTemplates)
     }
 
